@@ -163,4 +163,12 @@ async def joined(ctx, member: discord.Member):
     """Says when a member joined."""
     await ctx.send(f'{member.name} joined {discord.utils.format_dt(member.joined_at)}')
 
+@bot.command()
+async def tips(ctx):
+    await ctx.send("https://www.biofarma.co.id/id/announcement/detail/8-tips-menjaga-kesehatan-dari-polusi-udara")
+
+@bot.command()
+async def ide(ctx):
+    await ctx.send(" Menggunakan masker agar tidak terkena polusi\n Berjalan kaki jika ingin pergi ke tempat yang dekat\n Menggunakan transportasi umum untuk berpergian\n Jika bisa menggunakan alat transportasi listrik\n Tidak merokok\n Menanam tumbuhan / pohon di sekitar rumah")
+
 bot.run('TOKEN')
